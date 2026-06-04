@@ -8,12 +8,20 @@ import Gitalk from 'gitalk';
 // 🌟 引入全局配置，读取你的 GitHub OAuth 凭证
 import { siteConfig } from '../siteConfig'; // 如果路径报错，请检查层级是否需要改成 '../../siteConfig'
 
+const commentsEnabled = Boolean(
+  siteConfig.gitalkConfig.clientID &&
+  siteConfig.gitalkConfig.clientSecret &&
+  siteConfig.gitalkConfig.repo &&
+  siteConfig.gitalkConfig.owner &&
+  siteConfig.gitalkConfig.admin?.filter(Boolean).length
+);
+
 export default function Comments() {
   const containerRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    if (!commentsEnabled || !containerRef.current) return;
 
     // 清空之前的评论区（防止 Next.js 路由切换时重复渲染）
     containerRef.current.innerHTML = '';
@@ -46,14 +54,20 @@ export default function Comments() {
 
   return (
     <div className="w-full mt-16 relative">
-      {/* 🌟 视觉特效：底部环境光晕（保留氛围感） */}
-      <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-indigo-500/10 dark:bg-indigo-500/20 blur-3xl rounded-full pointer-events-none z-0"></div>
+      {!commentsEnabled ? (
+        <div className="relative z-10 rounded-3xl border border-slate-200/60 dark:border-slate-700/60 bg-white/50 dark:bg-slate-800/40 backdrop-blur-xl p-6 text-sm text-slate-600 dark:text-slate-300">
+          评论区暂未启用。
+        </div>
+      ) : (
+        <>
+          {/* 🌟 视觉特效：底部环境光晕（保留氛围感） */}
+          <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-indigo-500/10 dark:bg-indigo-500/20 blur-3xl rounded-full pointer-events-none z-0"></div>
 
-      {/* 🌟 Gitalk 容器：加入了优雅的顶部细边框，配合 custom-gitalk-glass 类名渲染毛玻璃 */}
-      <div ref={containerRef} className="relative z-10 custom-gitalk-glass pt-6 border-t border-slate-200/50 dark:border-slate-700/50" />
+          {/* 🌟 Gitalk 容器：加入了优雅的顶部细边框，配合 custom-gitalk-glass 类名渲染毛玻璃 */}
+          <div ref={containerRef} className="relative z-10 custom-gitalk-glass pt-6 border-t border-slate-200/50 dark:border-slate-700/50" />
 
-      {/* 🌟 毛玻璃样式魔改核心 (覆盖 Gitalk 默认样式) */}
-      <style jsx global>{`
+          {/* 🌟 毛玻璃样式魔改核心 (覆盖 Gitalk 默认样式) */}
+          <style jsx global>{`
         .custom-gitalk-glass .gt-container .gt-header-textarea {
           background: rgba(255, 255, 255, 0.1) !important;
           backdrop-filter: blur(12px) !important;
@@ -104,6 +118,8 @@ export default function Comments() {
           color: #6366f1 !important;
         }
       `}</style>
+        </>
+      )}
     </div>
   );
 }
