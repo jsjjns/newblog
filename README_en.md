@@ -42,9 +42,9 @@ This repository is a decoupled branch of the original XHBlogs workflow, with the
 │   ├── pages/              # standalone pages, e.g. about.md
 │   └── config/             # runtime-overridable config, e.g. site.json
 ├── docs/                   # architecture, schema, migration, handoff docs
-├── my-blog-manager/        # legacy manager, kept only for compatibility/reference
+├── my-blog-manager/        # legacy manager, kept only as historical reference
 ├── picture/                # historical README image assets
-└── scripts/                # helper scripts
+└── scripts/                # reserved for migration/helper scripts
 ```
 
 ---
@@ -157,14 +157,14 @@ If you just want to maintain the blog, the recommended path is direct Markdown /
 The repository still keeps:
 
 - `my-blog-manager/`
-- `update.py`
-- `update.bat`
 
-They remain only to:
+It remains only to:
 
 - preserve a comparison/reference path
 - keep rollback options during the transition
 - avoid deleting legacy assets too early
+
+`update.py` and `update.bat` have been removed from the main repository because they continue to imply the old manager-driven update path.
 
 They are **not** the recommended main workflow anymore.
 

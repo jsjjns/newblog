@@ -42,9 +42,9 @@
 │   ├── pages/              # 独立页面，如 about.md
 │   └── config/             # 运行时可覆盖配置，如 site.json
 ├── docs/                   # 架构、schema、迁移与交接文档
-├── my-blog-manager/        # 旧后台，当前仅保留作兼容参考，不是推荐主工作流
-├── picture/                # README 历史图片资源
-└── scripts/                # 辅助脚本（如后续迁移脚本）
+├── my-blog-manager/        # 旧后台，仅保留作历史参考；不再是推荐工作流
+├── picture/                # 历史 README 图片资源
+└── scripts/                # 预留给迁移/辅助脚本
 ```
 
 ---
@@ -159,14 +159,14 @@ draft: false
 目前仓库仍保留：
 
 - `my-blog-manager/`
-- `update.py`
-- `update.bat`
 
-它们保留的原因只是：
+它保留的原因只是：
 
 - 方便比对旧结构
 - 保留回退与参考路径
 - 避免在去后台化初期过早删除历史资产
+
+`update.py` 与 `update.bat` 已从主仓库移除，因为它们继续暗示旧的管理器驱动更新路径。
 
 **但它们已经不是推荐维护主线。**
 
