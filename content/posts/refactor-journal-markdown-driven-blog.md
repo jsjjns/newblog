@@ -4,7 +4,7 @@ slug: "refactor-journal-markdown-driven-blog"
 date: "2026-06-05"
 tags: ["Next.js", "折腾", "自托管", "Git"]
 category: "Tech"
-cover: "/images/covers/hello.jpg"
+cover: "/images/covers/refactor-cover.jpg"
 summary: "看中了一套极具美感的毛玻璃风格 Next.js 博客 UI，但实在无法忍受其笨重的本地管理后台。于是，我进行了一场‘外科手术’级别的重构。"
 draft: false
 ---
