@@ -1,0 +1,15 @@
+{
+  "siteName": "XHBlogs Decoupled",
+  "siteDescription": "A decoupled glassmorphism blog",
+  "author": "Your Name",
+  "siteUrl": "https://example.com",
+  "socialLinks": {
+    "github": "https://github.com/yourname"
+  },
+  "title": "XingHuiSama の 宝藏之地",
+  "authorName": "XingHuiSama",
+  "bio": "在代码、学术与分子动力学模拟间穿梭的普通人。近期正埋头于 GROMACS 模拟研究与神经网络计算。",
+  "avatarUrl": "https://bu.dusays.com/2026/03/24/69c1e38ac1846.jpg",
+  "defaultPostCover": "https://bu.dusays.com/2026/03/24/69c1e38b346cb.jpg",
+  "photoWallImage": "https://bu.dusays.com/2026/03/24/69c1e38b4c370.jpg"
+}
