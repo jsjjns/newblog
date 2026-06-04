@@ -1,14 +1,14 @@
-# Decoupled XHBlogs Architecture
+# Decoupled YhBlogs Architecture
 
 ## Goal
 
-Extract the `XHBlogs` frontend into a standalone, maintainable Next.js blog that does not depend on `my-blog-manager`, `update.py`, `update.bat`, fixed folder names, or a local Windows-first control console.
+Extract the `YhBlogs` frontend into a standalone, maintainable Next.js blog that does not depend on `my-blog-manager`, `update.py`, `update.bat`, fixed folder names, or a local Windows-first control console.
 
 ## Target Structure
 
 ```text
 .
-├── XHBlogs/
+├── YhBlogs/
 │   ├── app/
 │   ├── components/
 │   ├── lib/
@@ -36,7 +36,7 @@ Extract the `XHBlogs` frontend into a standalone, maintainable Next.js blog that
 
 ## Runtime Rules
 
-- Frontend pages must read via `XHBlogs/lib/content/*`
+- Frontend pages must read via `YhBlogs/lib/content/*`
 - No page should read directly from legacy manager paths
 - Optional features (comments, AI, music) must fail closed when unconfigured
 - The blog must build and run without `my-blog-manager`

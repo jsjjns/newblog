@@ -1,4 +1,4 @@
-# Handoff Notes — XHBlogs Decoupled Branch
+# Handoff Notes — YhBlogs Decoupled Branch
 
 Branch: `refactor/remove-manager`
 Working tree root: `/root/work/XinghuisamaBlogs`
@@ -14,14 +14,14 @@ Working tree root: `/root/work/XinghuisamaBlogs`
 - example content files and starter `site.json`
 
 ### Added loader layer
-- `XHBlogs/lib/content/fs.ts`
-- `XHBlogs/lib/content/types.ts`
-- `XHBlogs/lib/content/posts.ts`
-- `XHBlogs/lib/content/moments.ts`
-- `XHBlogs/lib/content/chatters.ts`
-- `XHBlogs/lib/content/pages.ts`
-- `XHBlogs/lib/content/about.ts`
-- `XHBlogs/lib/content/config.ts`
+- `YhBlogs/lib/content/fs.ts`
+- `YhBlogs/lib/content/types.ts`
+- `YhBlogs/lib/content/posts.ts`
+- `YhBlogs/lib/content/moments.ts`
+- `YhBlogs/lib/content/chatters.ts`
+- `YhBlogs/lib/content/pages.ts`
+- `YhBlogs/lib/content/about.ts`
+- `YhBlogs/lib/content/config.ts`
 
 ### Migrated pages
 - homepage
@@ -51,4 +51,4 @@ Both passed on this host after low-memory install strategy.
 - no production deploy wiring
 
 ## Recommended next commit title
-`refactor: decouple XHBlogs content layer from my-blog-manager workflow`
+`refactor: decouple YhBlogs content layer from my-blog-manager workflow`

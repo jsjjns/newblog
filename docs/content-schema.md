@@ -57,7 +57,7 @@ Path: `content/config/site.json`
 
 ```json
 {
-  "siteName": "XHBlogs Decoupled",
+  "siteName": "YhBlogs Decoupled",
   "siteDescription": "A decoupled glassmorphism blog",
   "author": "Your Name",
   "siteUrl": "https://example.com",

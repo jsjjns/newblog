@@ -10,7 +10,7 @@
   - `content/moments/`
   - `content/pages/`
   - `content/config/`
-- new loader layer under `XHBlogs/lib/content/*`
+- new loader layer under `YhBlogs/lib/content/*`
 - runtime site config overlay support via `content/config/site.json`
 - architecture / schema / migration documentation under `docs/`
 

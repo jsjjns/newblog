@@ -1,6 +1,6 @@
-# XHBlogs Decoupled
+# YhBlogs Decoupled
 
-一个基于 **Next.js** 的高颜值个人博客分支，保留原 `XHBlogs` 前端 UI 风格，但将内容维护主线改造成 **去后台版（decoupled, content-driven）** 工作流。
+一个基于 **Next.js** 的高颜值个人博客分支，保留原 `YhBlogs` 前端 UI 风格，但将内容维护主线改造成 **去后台版（decoupled, content-driven）** 工作流。
 
 这个仓库的主路线不再依赖 `my-blog-manager`、`update.py`、`update.bat` 或“本地控制台 + 写回 GitHub”的双轨同步机制。推荐的维护方式是：
 
@@ -19,12 +19,12 @@
 
 ## 项目定位
 
-这个仓库是原始 XHBlogs 工作流的一个**去后台版整理分支**，目标是：
+这个仓库是原始 YhBlogs 工作流的一个**去后台版整理分支**，目标是：
 
 - 保留原有前端成品感与 UI 设计
 - 移除对本地后台控制台的主链依赖
 - 将内容统一收敛到 `content/`
-- 将内容读取统一收敛到 `XHBlogs/lib/content/*`
+- 将内容读取统一收敛到 `YhBlogs/lib/content/*`
 - 让部署与维护更接近普通 Next.js 项目
 
 ---
@@ -33,7 +33,7 @@
 
 ```text
 .
-├── XHBlogs/                # Next.js 前端应用
+├── YhBlogs/                # Next.js 前端应用
 │   └── lib/content/        # 内容读取层
 ├── content/                # 新主线内容源
 │   ├── posts/              # 博客文章
@@ -54,7 +54,7 @@
 ### 1. 安装依赖
 
 ```bash
-cd XHBlogs
+cd YhBlogs
 npm install
 ```
 
@@ -131,11 +131,11 @@ draft: false
 
 这些页面现在通过：
 
-- `XHBlogs/lib/content/posts.ts`
-- `XHBlogs/lib/content/chatters.ts`
-- `XHBlogs/lib/content/moments.ts`
-- `XHBlogs/lib/content/about.ts`
-- `XHBlogs/lib/content/config.ts`
+- `YhBlogs/lib/content/posts.ts`
+- `YhBlogs/lib/content/chatters.ts`
+- `YhBlogs/lib/content/moments.ts`
+- `YhBlogs/lib/content/about.ts`
+- `YhBlogs/lib/content/config.ts`
 
 来读取 `content/` 下的数据。
 

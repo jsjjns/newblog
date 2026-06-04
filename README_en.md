@@ -1,6 +1,6 @@
-# XHBlogs Decoupled
+# YhBlogs Decoupled
 
-A **Next.js** personal blog fork that keeps the original `XHBlogs` frontend look and feel, while switching the maintenance workflow to a **decoupled, content-driven** model.
+A **Next.js** personal blog fork that keeps the original `YhBlogs` frontend look and feel, while switching the maintenance workflow to a **decoupled, content-driven** model.
 
 This repository no longer treats `my-blog-manager`, `update.py`, `update.bat`, or the old “local console + push back to GitHub” workflow as the primary path. The recommended workflow is now:
 
@@ -19,12 +19,12 @@ This repository no longer treats `my-blog-manager`, `update.py`, `update.bat`, o
 
 ## Project Positioning
 
-This repository is a decoupled branch of the original XHBlogs workflow, with these goals:
+This repository is a decoupled branch of the original YhBlogs workflow, with these goals:
 
 - keep the original frontend UI quality
 - remove the local manager from the main content path
 - consolidate content under `content/`
-- consolidate loading logic under `XHBlogs/lib/content/*`
+- consolidate loading logic under `YhBlogs/lib/content/*`
 - make maintenance and deployment feel like a normal Next.js project
 
 ---
@@ -33,7 +33,7 @@ This repository is a decoupled branch of the original XHBlogs workflow, with the
 
 ```text
 .
-├── XHBlogs/                # Next.js frontend app
+├── YhBlogs/                # Next.js frontend app
 │   └── lib/content/        # content loader layer
 ├── content/                # new primary content source
 │   ├── posts/              # blog posts
@@ -54,7 +54,7 @@ This repository is a decoupled branch of the original XHBlogs workflow, with the
 ### 1. Install dependencies
 
 ```bash
-cd XHBlogs
+cd YhBlogs
 npm install
 ```
 
@@ -131,11 +131,11 @@ These pages have already been migrated to the new content layer:
 
 They now read data through:
 
-- `XHBlogs/lib/content/posts.ts`
-- `XHBlogs/lib/content/chatters.ts`
-- `XHBlogs/lib/content/moments.ts`
-- `XHBlogs/lib/content/about.ts`
-- `XHBlogs/lib/content/config.ts`
+- `YhBlogs/lib/content/posts.ts`
+- `YhBlogs/lib/content/chatters.ts`
+- `YhBlogs/lib/content/moments.ts`
+- `YhBlogs/lib/content/about.ts`
+- `YhBlogs/lib/content/config.ts`
 
 ---
 
