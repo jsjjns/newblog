@@ -1,51 +1,39 @@
-## 更新日志 (版本0.2.1~版本0.2.3)
+# Update Log
 
-#### 1. 优化在移动端显示卡顿情况
+## v0.4.0-decoupled
 
-> 调整在移动端显示特效，减轻移动端卡顿情况
+### Added
 
-#### 2. 增加各个页面对移动端适配
+- new `content/` content source structure
+  - `content/posts/`
+  - `content/chatters/`
+  - `content/moments/`
+  - `content/pages/`
+  - `content/config/`
+- new loader layer under `XHBlogs/lib/content/*`
+- runtime site config overlay support via `content/config/site.json`
+- architecture / schema / migration documentation under `docs/`
 
-> 实现首页、杂谈、归档等页面的移动端适配，增加移动端导航栏。
+### Changed
 
-#### 3. 关于新增动态
+- homepage now reads from the new content layer
+- post detail now reads from the new content layer
+- chatter list/detail now read from the new content layer
+- about page now reads from the new content layer
+- moments page now reads from the new content layer
+- timeline page now reads from the new content layer
+- tree / creative workshop page now reads from the new content layer
 
-> 可以看到提交记录
+### Deprecated
 
-#### 4. 友链介绍可修改
+- `my-blog-manager` is no longer the recommended main workflow
+- `update.py` / `update.bat` are no longer treated as the primary maintenance path
+- local manager-driven GitHub sync is no longer the recommended publishing path
 
-> 现在你可以在控制台中编辑可复制信息了
+### Notes
 
-#### 5. 存在的几个bug修复
+This branch keeps a number of legacy files and directories for compatibility/reference, but the main maintenance path is now:
 
-> Start.dat闪退，标题无法修改问题已修复
-
-#### 6. 更新博客源码
-
-> 实现更新源码
-
-## 更新日志 (版本0.1.1)
-
-#### 1. 标题页与图标更新
-
-> 实现自定义网页标题和图标按钮，详细见设置中的个人名片设置
-
-#### 2. 文章支持Latex格式
-
-> 实现Latex格式公式显示，具体使用如
->
-> 输入公式如 $ E = mc^2 $ 下划线需使用转义符"\\_"。
->
-> 此处感谢同学支持更新Latex公式显示 @inWunsch
-
-#### 3. 评论系统bug修复
-
-> 修复评论系统无法正常获取bug
-
-#### 4. siteconfig设置新增
-
-> 新增faviconUrl、navTitle等多项，更新同步拉取代码时请注意保存之前信息！！
-
-#### 5. 环境变量
-
-> 所需环境变量增多，请注意！
+- edit content under `content/`
+- use Git for versioning
+- use standard Next.js build/deploy workflow
