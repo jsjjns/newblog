@@ -10,9 +10,9 @@ export const siteConfig = {
   navTitle: "0xRefactor",
 
   // 👇 【新增】导航栏中间的那个后缀/分隔符（默认是 の）
-  navSuffix: "の",
+  navSuffix: "·",
 
-  navAfter: "宝藏之地",
+  navAfter: "blog",
 
   // 2. 头像设置 (支持网络链接，或将图片放入 public 文件夹后使用 "/me.jpg")
   avatarUrl: "/images/covers/refactor-cover.jpg",
@@ -46,7 +46,7 @@ export const siteConfig = {
 
 
   // 👇 【新增】：全局背景弹幕配置
-  danmakuList: ["在干嘛呢？", "有笨蛋嘛？", "前方高能反应！", "GROMACS 跑起来了吗？", "MD 模拟什么时候才能出图啊", "Graph Neural Networks 炼丹中...", "BUG 修复进度 99%", "今天背单词了吗？", "Tailwind CSS 拯救前端", "写算法中", "睡大觉中", "到底在干嘛？"],
+  danmakuList: ["记录一下", "先写点东西", "新站点施工中", "今天也在折腾", "下一篇写什么", "保持更新", "别鸽了", "慢慢搭起来", "有空再优化", "先发出去", "继续写", "blog 运行中"],
   gitalkConfig: {
     clientID: "",
     clientSecret: "",
@@ -66,6 +66,6 @@ export const siteConfig = {
     maxOutputTokens: 150,
     temperature: 0.85,
   },
-  friendLinkApplyFormat: "名称：0xRefactor\n简介：暂无\n链接：https://blog.wsyht.top\n头像：/images/covers/refactor-cover.jpg",
+  friendLinkApplyFormat: "名称：0xRefactor blog\n简介：暂无\n链接：https://blog.wsyht.top\n头像：/images/covers/refactor-cover.jpg",
   enableLevelSystem: true,
 };
