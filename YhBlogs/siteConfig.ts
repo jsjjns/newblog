@@ -25,7 +25,7 @@ export const siteConfig = {
   bgImages: ["https://bu.dusays.com/2026/03/24/69c1e38b4c370.jpg", "https://bu.dusays.com/2026/03/24/69c26fe4acdb5.jpg", "https://bu.dusays.com/2026/03/24/69c26fe4d9486.jpg"],
 
   // 4. 文章默认封面图 (当 Markdown 没写 cover 时显示)
-  defaultPostCover: "https://bu.dusays.com/2026/03/24/69c1e38b346cb.jpg",
+  defaultPostCover: "/images/covers/refactor-cover.jpg",
 
   // 5. 首页照片墙预览图
   photoWallImage: "https://bu.dusays.com/2026/03/24/69c1e38b4c370.jpg",
@@ -34,9 +34,9 @@ export const siteConfig = {
     github: "",
     gitee: "",
     google: "",
-    email: "",
-    qq: "1124533793",
-    wechat: "XingHuisama",
+    email: "yht@mnyht.top",
+    qq: "",
+    wechat: "",
   },
   counts: {
     photos: 128, // 照片墙数量可以手动写死或动态计算
@@ -66,6 +66,6 @@ export const siteConfig = {
     maxOutputTokens: 150,
     temperature: 0.85,
   },
-  friendLinkApplyFormat: "名称：XingHuiSamaの宝藏之地\n简介：今天我也要学习吗\n链接：https://www.xinghuisama.top\n头像：https://bu.dusays.com/2026/03/24/69c1e38ac1846.jpg",
+  friendLinkApplyFormat: "名称：0xRefactor\n简介：暂无\n链接：https://blog.wsyht.top\n头像：/images/covers/refactor-cover.jpg",
   enableLevelSystem: true,
 };
