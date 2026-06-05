@@ -61,7 +61,7 @@ function getDirActivities(dirName: string, typeLabel: '文章' | '杂谈' | '说
 export default async function AboutPage() {
   const aboutDocument = getAboutDocument();
   let contentHtml = "博主很懒，还没有写自我介绍哦...";
-  let coverImage = "https://bu.dusays.com/2026/03/24/69c23dc278c78.jpg";
+  let coverImage = "/images/covers/refactor-cover.jpg";
 
   try {
     let content = aboutDocument?.content ?? '';
